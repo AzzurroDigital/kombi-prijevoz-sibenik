@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kombi-prijevoz-sibenik.pages.dev/sitemap.xml
