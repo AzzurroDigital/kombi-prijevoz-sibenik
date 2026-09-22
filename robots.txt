@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kombi-prijevoz-sibenik.pages.dev/sitemap.xml
+Sitemap: https://vita-s.tight-cell-27ee.workers.dev/sitemap.xml
