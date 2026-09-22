@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vita-s.tight-cell-27ee.workers.dev/sitemap.xml
+Sitemap: https://prijevoz-sibenik.com/sitemap.xml
