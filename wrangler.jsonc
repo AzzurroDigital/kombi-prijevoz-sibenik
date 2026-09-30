@@ -1,6 +1,11 @@
 {
   "name": "vita-s",
   "compatibility_date": "2026-09-01",
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "prijevoz-sibenik.com", "custom_domain": true },
+    { "pattern": "www.prijevoz-sibenik.com", "custom_domain": true }
+  ],
   "assets": {
     "directory": "./",
     "not_found_handling": "404-page",
