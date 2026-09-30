@@ -3,18 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<script>document.documentElement.classList.add('js')</script>
 <meta name="theme-color" content="#ffffff">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="favicon-16.png" sizes="16x16" type="image/png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="color-scheme" content="light">
-<title>Kombi prijevoz i selidbe Šibenik — VITA-S</title>
-<meta name="description" content="Kombi prijevoz Šibenik i po cijeloj Hrvatskoj — selidbe stanova i ureda, dostave, opskrba trgovačkih centara, odvoz starog namještaja i građevinskog otpada. VITA-S, 091 254 6296.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/fonts/inter-base.woff2" as="font" type="font/woff2" crossorigin>
+<title>Kombi prijevoz i selidbe Šibenik | Obrt VITA-S</title>
+<meta name="description" content="Selidbe stanova, kuća i ureda, kombi prijevoz robe te odvoz starog namještaja i šute u Šibeniku i okolici. Cijena dogovorena unaprijed. 091 254 6296.">
 <link rel="canonical" href="https://prijevoz-sibenik.com/">
 <link rel="alternate" hreflang="hr" href="https://prijevoz-sibenik.com/">
 <link rel="alternate" hreflang="x-default" href="https://prijevoz-sibenik.com/">
-<link rel="preload" as="image" href="kombi-vita-s.webp" fetchpriority="high">
+<link rel="preload" as="image" href="/kombi-vita-s.webp" fetchpriority="high">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="author" content="Obrt za prijevoz VITA-S, Šibenik">
 <meta name="geo.region" content="HR-15">
@@ -33,10 +35,10 @@
 <meta name="twitter:title" content="Kombi prijevoz i selidbe Šibenik — VITA-S">
 <meta name="twitter:description" content="Selidbe, dostave, odvoz starog namještaja i građevinskog otpada. Šibenik i cijela Hrvatska.">
 <meta name="twitter:image" content="https://prijevoz-sibenik.com/og.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap&subset=latin,latin-ext" rel="stylesheet">
 <style>
+@font-face{font-family:"Inter";font-style:normal;font-weight:400 800;font-display:swap;src:url(/fonts/inter-base.woff2) format("woff2");unicode-range:U+0000-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026,U+2039-203A,U+20AC,U+2192,U+2212}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400 800;font-display:swap;src:url(/fonts/inter-hr.woff2) format("woff2");unicode-range:U+0106-0107,U+010C-010D,U+0110-0111,U+0160-0161,U+017D-017E}
+
 :root{
   --ink:#10151c; --ink-2:#39424f; --muted:#657083;
   --blue:#1565d8; --blue-d:#0f4dab; --blue-l:#eaf2fe;
@@ -65,7 +67,7 @@ section{padding:clamp(48px,8vw,88px) 0;scroll-margin-top:80px}
 .sec-head h2{font-size:clamp(27px,5vw,42px)}
 .sec-head p{color:var(--muted);max-width:56ch;margin:14px 0 0}
 
-.reveal{opacity:0;transform:translateY(12px);transition:opacity .55s var(--ease),transform .55s var(--ease);transition-delay:calc(var(--i,0) * 60ms)}
+
 .reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){
   .reveal{opacity:1;transform:none;transition:none}
@@ -80,18 +82,18 @@ header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);backdro
 .logo b{display:block;font-size:17px;font-weight:700;letter-spacing:-.01em}
 .logo small{display:block;font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
 .nav nav{display:none;gap:24px}
-.nav nav a{font-size:14px;font-weight:500;text-decoration:none;color:var(--ink-2);transition:color .2s var(--ease)}
+.nav nav a{font-size:14px;font-weight:500;padding:8px 0;text-decoration:none;color:var(--ink-2);transition:color .2s var(--ease)}
 .nav .navcta{display:none}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:15px 24px;border-radius:999px;background:var(--blue);color:#fff;border:1px solid var(--blue);font-size:15px;font-weight:600;text-decoration:none;cursor:pointer;transition:transform .16s var(--ease),background .2s var(--ease),box-shadow .2s var(--ease);box-shadow:0 6px 18px rgba(21,101,216,.18)}
 .btn:active{transform:scale(.97)}
   .q summary:active,.nav nav a:active{opacity:.6}
-.btn.wa{background:#1fa855;border-color:#1fa855;box-shadow:0 6px 18px rgba(31,168,85,.18)}
+.btn.wa{background:#147a3c;border-color:#147a3c;box-shadow:0 6px 18px rgba(31,168,85,.18)}
 .btn.line{background:#fff;color:var(--ink);border-color:var(--line);box-shadow:none}
 @media(hover:hover) and (pointer:fine){
   .madeby:hover img{opacity:1}
   .btn:hover{background:var(--blue-d);border-color:var(--blue-d)}
-  .btn.wa:hover{background:#178a45;border-color:#178a45}
+  .btn.wa:hover{background:#0f5f2f;border-color:#0f5f2f}
   .btn.line:hover{background:var(--soft)}
   .nav nav a:hover{color:var(--blue)}
   .shot:hover img{transform:scale(1.04)}
@@ -163,7 +165,7 @@ footer{border-top:1px solid var(--line);padding:36px 0 calc(96px + env(safe-area
 .foot{display:grid;gap:18px;grid-template-columns:1fr}
 .foot p{margin:0;color:var(--muted);font-size:14px}
 .foot h4{font-size:16px;margin-bottom:8px}
-.credit{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:#8b95a5;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.credit{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .madeby{display:inline-flex;align-items:center;line-height:0}
 .madeby img{height:34px;width:auto;opacity:.65;transition:opacity .2s var(--ease)}
 
@@ -199,8 +201,44 @@ details.q summary::after{content:"+";color:var(--blue);font-size:22px;line-heigh
 details.q[open] summary::after{content:"\2013"}
 details.q .a{padding:0 18px 18px;color:var(--ink-2);font-size:15.5px}
 details.q .a a{color:var(--blue)}
+
+.js .reveal{opacity:0;transform:translateY(12px)}
+.reveal{transition:opacity .55s var(--ease),transform .55s var(--ease);transition-delay:calc(var(--i,0) * 60ms)}
+.js .reveal.in,.reveal.in{opacity:1;transform:none}
+.nav nav a[aria-current=page]{color:var(--blue)}
+.crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:13px;color:var(--muted);margin:0 0 18px}
+.crumbs a{color:var(--blue);text-decoration:none;display:inline-block;padding:4px 0}
+.more{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-weight:600;font-size:15px;color:var(--blue);text-decoration:none;padding:6px 0}
+.more::after{content:"\2192";transition:transform .2s var(--ease)}
+a.chipx{text-decoration:none;color:var(--blue);border-color:#cfe0fb;transition:background .2s var(--ease),border-color .2s var(--ease)}
+.card li a,.prose a,.a a{color:var(--blue)}
+.prose{max-width:68ch}
+.prose p{color:var(--ink-2);margin:0 0 14px}
+.prose h2{font-size:clamp(24px,4vw,34px);margin:0 0 14px}
+.prose ul{margin:0 0 16px;padding:0;list-style:none}
+.prose li{position:relative;padding-left:26px;margin-bottom:10px;color:var(--ink-2)}
+.prose li::before{content:"";position:absolute;left:0;top:10px;width:14px;height:8px;border-left:2px solid var(--blue);border-bottom:2px solid var(--blue);transform:rotate(-45deg)}
+.prose li b{color:var(--ink)}
+.two-col{display:grid;gap:28px;grid-template-columns:1fr;align-items:start}
+.two-col figure{margin:0;border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
+.two-col figure img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.links{display:grid;gap:12px;margin-top:26px;grid-template-columns:1fr}
+.lk{display:block;text-decoration:none;border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;background:#fff;transition:border-color .2s var(--ease)}
+.lk b{display:block;font-size:17px;color:var(--ink);margin-bottom:4px}
+.lk span{font-size:14.5px;color:var(--muted)}
+.band{border:1px solid var(--line);border-radius:var(--r);background:var(--soft);padding:28px 24px}
+.band h2{font-size:clamp(24px,4vw,32px);margin-bottom:8px}
+.band p{color:var(--ink-2);margin:0 0 18px}
+.band .cta{display:flex;flex-wrap:wrap;gap:10px}
+.foot ul{list-style:none;margin:0;padding:0}
+.foot li{margin:0 0 4px}
+.foot li a{color:var(--blue);text-decoration:none;font-size:14px;display:inline-block;padding:4px 0}
+@media(min-width:700px){.links{grid-template-columns:repeat(3,1fr)}.two-col{grid-template-columns:1.2fr .8fr;gap:40px}}
+@media(min-width:1000px){.foot{grid-template-columns:1.3fr 1fr 1fr 1fr}}
+@media(hover:hover) and (pointer:fine){a.chipx:hover{background:var(--blue-l);border-color:var(--blue)}.lk:hover{border-color:var(--blue)}.more:hover::after{transform:translateX(4px)}.foot li a:hover{text-decoration:underline}}
+@media(prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MovingCompany", "@id": "https://prijevoz-sibenik.com/#business", "name": "Obrt za prijevoz VITA-S", "alternateName": "VITA-S", "description": "Selidbe stanova i ureda, kombi prijevoz robe, dostave i opskrba trgovačkih centara, odvoz starog namještaja, glomaznog i građevinskog otpada. Šibenik, okolica i cijela Hrvatska.", "url": "https://prijevoz-sibenik.com/", "image": "https://prijevoz-sibenik.com/og.jpg", "telephone": "+385912546296", "email": "ivica.strize@gmail.com", "address": {"@type": "PostalAddress", "streetAddress": "Put prvog šibenskog partizanskog odreda 3", "addressLocality": "Šibenik", "postalCode": "22000", "addressCountry": "HR"}, "areaServed": [{"@type": "City", "name": "Šibenik"}, {"@type": "City", "name": "Vodice"}, {"@type": "City", "name": "Primošten"}, {"@type": "City", "name": "Skradin"}, {"@type": "City", "name": "Knin"}, {"@type": "City", "name": "Drniš"}, {"@type": "AdministrativeArea", "name": "Šibensko-kninska županija"}, {"@type": "Country", "name": "Hrvatska"}], "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "07:00", "closes": "20:00"}], "knowsLanguage": "hr", "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Usluge", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Selidbe stanova, kuća i ureda", "areaServed": "Šibenik"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Kombi prijevoz robe i materijala", "areaServed": "Hrvatska"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Dostave i opskrba trgovačkih centara"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Odvoz starog namještaja i glomaznog otpada"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Odvoz građevinskog otpada i šute"}}]}, "sameAs": ["https://g.page/r/CZPaiW3PAw5zEBM", "https://www.mojkvart.hr/sibenik/Selidbe-prijevoz-robe/vita-s-obrt-za-usluge-prijevoza", "https://www.moja-djelatnost.hr/kombi-prijevoz-robe-sibenik-hrvatska/vita-s-obrt-za-usluge-prijevoza/MMxXIaKC"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MovingCompany", "@id": "https://prijevoz-sibenik.com/#business", "name": "Obrt za prijevoz VITA-S", "alternateName": "VITA-S", "description": "Selidbe stanova i ureda, kombi prijevoz robe, dostave i opskrba trgovačkih centara, odvoz starog namještaja, glomaznog i građevinskog otpada. Šibenik, okolica i cijela Hrvatska.", "url": "https://prijevoz-sibenik.com/", "image": "https://prijevoz-sibenik.com/og.jpg", "telephone": "+385912546296", "email": "ivica.strize@gmail.com", "address": {"@type": "PostalAddress", "streetAddress": "Put prvog šibenskog partizanskog odreda 3", "addressLocality": "Šibenik", "postalCode": "22000", "addressCountry": "HR"}, "areaServed": [{"@type": "City", "name": "Šibenik"}, {"@type": "City", "name": "Vodice"}, {"@type": "City", "name": "Primošten"}, {"@type": "City", "name": "Skradin"}, {"@type": "City", "name": "Knin"}, {"@type": "City", "name": "Drniš"}, {"@type": "AdministrativeArea", "name": "Šibensko-kninska županija"}, {"@type": "Country", "name": "Hrvatska"}, {"@type": "City", "name": "Tribunj"}, {"@type": "City", "name": "Pirovac"}], "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "07:00", "closes": "20:00"}], "knowsLanguage": "hr", "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Usluge", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Selidbe stanova, kuća i ureda", "areaServed": "Šibenik", "url": "https://prijevoz-sibenik.com/selidbe-sibenik/"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Kombi prijevoz robe i materijala", "areaServed": "Hrvatska", "url": "https://prijevoz-sibenik.com/kombi-prijevoz-sibenik/"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Dostave i opskrba trgovačkih centara", "url": "https://prijevoz-sibenik.com/kombi-prijevoz-sibenik/"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Odvoz starog namještaja i glomaznog otpada", "url": "https://prijevoz-sibenik.com/odvoz-starog-namjestaja-sibenik/"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Odvoz građevinskog otpada i šute", "url": "https://prijevoz-sibenik.com/odvoz-sute-sibenik/"}}]}, "sameAs": ["https://g.page/r/CZPaiW3PAw5zEBM", "https://www.mojkvart.hr/sibenik/Selidbe-prijevoz-robe/vita-s-obrt-za-usluge-prijevoza", "https://www.moja-djelatnost.hr/kombi-prijevoz-robe-sibenik-hrvatska/vita-s-obrt-za-usluge-prijevoza/MMxXIaKC"], "hasMap": "https://g.page/r/CZPaiW3PAw5zEBM"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Koliko košta selidba u Šibeniku?", "acceptedAnswer": {"@type": "Answer", "text": "Cijena ovisi o količini stvari, katu i udaljenosti. Dolazimo pogledati na licu mjesta ili procijenimo po fotografijama, a cijenu dogovaramo prije početka posla. Za okvirnu cijenu nazovite 091 254 6296."}}, {"@type": "Question", "name": "Vozite li izvan Šibenika, po cijeloj Hrvatskoj?", "acceptedAnswer": {"@type": "Answer", "text": "Da. Kratke selidbe i dostave radimo u Šibeniku i okolici — Vodice, Primošten, Skradin, Tribunj, Pirovac — a kombi prijevoz po Hrvatskoj, prema Zadru, Splitu i Zagrebu, dogovaramo po potrebi."}}, {"@type": "Question", "name": "Odvozite li stari namještaj i građevinski otpad?", "acceptedAnswer": {"@type": "Answer", "text": "Da. Odvozimo stari namještaj, glomazni otpad te građevinski otpad i šutu. Recite otprilike koliko toga ima i s kojeg kata se iznosi."}}, {"@type": "Question", "name": "Radite li selidbe na kat i bez lifta?", "acceptedAnswer": {"@type": "Answer", "text": "Da. Kod upita navedite kat i ima li lift, jer to utječe na vrijeme i cijenu."}}, {"@type": "Question", "name": "Prevozite li robu za tvrtke i trgovačke centre?", "acceptedAnswer": {"@type": "Answer", "text": "Da. Radimo opskrbu i dostavu za trgovačke centre, prijevoz robe, palete i građevinskog materijala, jednokratno ili redovito."}}, {"@type": "Question", "name": "Kako najbrže dobiti procjenu?", "acceptedAnswer": {"@type": "Answer", "text": "Pošaljite fotografije prostora i stvari na WhatsApp 091 254 6296 uz adrese polaska i dolaska. Tako procjena ide najbrže."}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "@id": "https://prijevoz-sibenik.com/#website", "url": "https://prijevoz-sibenik.com/", "name": "Kombi prijevoz i selidbe Šibenik — VITA-S", "inLanguage": "hr-HR", "publisher": {"@id": "https://prijevoz-sibenik.com/#business"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "@id": "https://prijevoz-sibenik.com/#webpage", "url": "https://prijevoz-sibenik.com/", "name": "Kombi prijevoz i selidbe Šibenik — VITA-S", "inLanguage": "hr-HR", "isPartOf": {"@id": "https://prijevoz-sibenik.com/#website"}, "about": {"@id": "https://prijevoz-sibenik.com/#business"}, "primaryImageOfPage": {"@type": "ImageObject", "url": "https://prijevoz-sibenik.com/kombi-vita-s.webp"}, "description": "Selidbe stanova i ureda, kombi prijevoz robe, dostave i opskrba trgovačkih centara, odvoz starog namještaja i građevinskog otpada u Šibeniku i po Hrvatskoj."}</script>
@@ -210,15 +248,11 @@ details.q .a a{color:var(--blue)}
 <a class="skip" href="#sadrzaj">Preskoči na sadržaj</a>
 <header>
   <div class="wrap nav">
-    <a class="logo" href="#top"><b>Kombi prijevoz i selidbe</b><small>Šibenik · obrt VITA-S</small></a>
+    <a class="logo" href="/"><b>Kombi prijevoz i selidbe</b><small>Šibenik · obrt VITA-S</small></a>
     <nav aria-label="Glavni izbornik">
-      <a href="#usluge">Usluge</a>
-      <a href="#kako">Kako ide</a>
-      <a href="#podrucje">Područje</a>
-      <a href="#pitanja">Pitanja</a>
-      <a href="#kontakt">Kontakt</a>
+      <a href="/selidbe-sibenik/">Selidbe</a><a href="/kombi-prijevoz-sibenik/">Kombi prijevoz</a><a href="/odvoz-starog-namjestaja-sibenik/">Odvoz namještaja</a><a href="/odvoz-sute-sibenik/">Odvoz šute</a><a href="/#kontakt">Kontakt</a>
     </nav>
-    <a class="btn navcta" href="#kontakt">Zatraži procjenu</a>
+    <a class="btn navcta" href="/#kontakt">Zatraži procjenu</a>
   </div>
 </header>
 
@@ -243,7 +277,7 @@ details.q .a a{color:var(--blue)}
         </div>
         <p class="note reveal" style="--i:4">Obrt za prijevoz VITA-S · Put prvog šibenskog partizanskog odreda 3, 22000 Šibenik</p>
       </div>
-      <div class="heroimg reveal" style="--i:2"><img src="kombi-vita-s.webp" alt="Kombi za prijevoz i selidbe u Šibeniku — obrt VITA-S, vozilo s natpisom" width="780" height="585" fetchpriority="high" decoding="async"></div>
+      <div class="heroimg reveal" style="--i:2"><img src="/kombi-vita-s.webp" alt="Kombi za prijevoz i selidbe u Šibeniku — obrt VITA-S, vozilo s natpisom" width="780" height="585" fetchpriority="high" decoding="async"></div>
     </div>
 
     <div class="trust">
@@ -270,9 +304,10 @@ details.q .a a{color:var(--blue)}
           <li>Pojedinačni komadi — ormar, kauč, bijela tehnika</li>
           <li>Demontaža i ponovna montaža namještaja</li>
           <li>Pakiranje i zaštita osjetljivih stvari</li>
-          <li>Odvoz starog namještaja i glomaznog otpada</li>
-          <li>Odvoz građevinskog otpada i šute</li>
+          <li><a href="/odvoz-starog-namjestaja-sibenik/">Odvoz starog namještaja i glomaznog otpada</a></li>
+          <li><a href="/odvoz-sute-sibenik/">Odvoz građevinskog otpada i šute</a></li>
         </ul>
+        <a class="more" href="/selidbe-sibenik/">Selidbe Šibenik — sve o selidbi</a>
       </div>
       <div class="card reveal" style="--i:1">
         <h3>Prijevoz robe</h3><div class="sub">Za privatne i tvrtke</div>
@@ -285,6 +320,7 @@ details.q .a a{color:var(--blue)}
           <li>Prijevoz po Dalmaciji i dalje po dogovoru</li>
           <li>Hitni termini kad se oslobodi mjesto</li>
         </ul>
+        <a class="more" href="/kombi-prijevoz-sibenik/">Kombi prijevoz Šibenik — sve o prijevozu</a>
       </div>
     </div>
     <div class="chips">
@@ -313,9 +349,9 @@ details.q .a a{color:var(--blue)}
       <div class="stepx reveal" style="--i:2"><b>3</b><h4>Selidba</h4><p>Dolazimo s dekama i folijom, nosimo, vozimo i slažemo na novoj adresi.</p></div>
     </div>
     <div class="shots">
-      <figure class="shot reveal"><img src="selidba-na-kat.webp" alt="Selidba na kat — nošenje zaštićenog namještaja niz stubište" width="760" height="560" loading="lazy" decoding="async"><figcaption>Nošenje i zaštita</figcaption></figure>
-      <figure class="shot reveal" style="--i:1"><img src="utovar-u-kombi.webp" alt="Kombi prijevoz — kutije i zaštićeni namještaj složeni u kombiju" width="760" height="560" loading="lazy" decoding="async"><figcaption>Slaganje u kombi</figcaption></figure>
-      <figure class="shot reveal" style="--i:2"><img src="kombi-prijevoz-hrvatska.webp" alt="Kombi prijevoz po Dalmaciji — kombi obrta VITA-S uz more" width="720" height="540" loading="lazy" decoding="async"><figcaption>Prijevoz po Dalmaciji</figcaption></figure>
+      <figure class="shot reveal"><img src="/selidba-na-kat.webp" alt="Selidba na kat — nošenje zaštićenog namještaja niz stubište" width="760" height="560" loading="lazy" decoding="async"><figcaption>Nošenje i zaštita</figcaption></figure>
+      <figure class="shot reveal" style="--i:1"><img src="/utovar-u-kombi.webp" alt="Kombi prijevoz — kutije i zaštićeni namještaj složeni u kombiju" width="760" height="560" loading="lazy" decoding="async"><figcaption>Slaganje u kombi</figcaption></figure>
+      <figure class="shot reveal" style="--i:2"><img src="/kombi-prijevoz-hrvatska.webp" alt="Kombi prijevoz po Dalmaciji — kombi obrta VITA-S uz more" width="720" height="540" loading="lazy" decoding="async"><figcaption>Prijevoz po Dalmaciji</figcaption></figure>
     </div>
   </div>
 </section>
@@ -343,16 +379,16 @@ details.q .a a{color:var(--blue)}
       <p>Ako se vaš posao ne nalazi na popisu, svejedno nazovite — kombi je isti, razlikuje se samo teret.</p>
     </div>
     <div class="chips">
-      <span class="chipx reveal">Selidba stana u Šibeniku</span>
+      <a class="chipx reveal" href="/selidbe-sibenik/">Selidba stana u Šibeniku</a>
       <span class="chipx reveal" style="--i:1">Selidba ureda i poslovnog prostora</span>
-      <span class="chipx reveal" style="--i:2">Prijevoz namještaja i bijele tehnike</span>
-      <span class="chipx reveal" style="--i:3">Odvoz šute i građevinskog otpada</span>
-      <span class="chipx reveal" style="--i:4">Odvoz starog namještaja na deponij</span>
+      <a class="chipx reveal" style="--i:2" href="/kombi-prijevoz-sibenik/">Prijevoz namještaja i bijele tehnike</a>
+      <a class="chipx reveal" style="--i:3" href="/odvoz-sute-sibenik/">Odvoz šute i građevinskog otpada</a>
+      <a class="chipx reveal" style="--i:4" href="/odvoz-starog-namjestaja-sibenik/">Odvoz starog namještaja na deponij</a>
       <span class="chipx reveal" style="--i:5">Dostava robe za trgovačke centre</span>
-      <span class="chipx reveal" style="--i:6">Kombi prijevoz Šibenik — Zadar</span>
-      <span class="chipx reveal" style="--i:7">Kombi prijevoz Šibenik — Split</span>
-      <span class="chipx reveal" style="--i:8">Kombi prijevoz Šibenik — Zagreb</span>
-      <span class="chipx reveal" style="--i:9">Selidba na kat bez lifta</span>
+      <a class="chipx reveal" style="--i:6" href="/kombi-prijevoz-sibenik/#relacije">Kombi prijevoz Šibenik — Zadar</a>
+      <a class="chipx reveal" style="--i:7" href="/kombi-prijevoz-sibenik/#relacije">Kombi prijevoz Šibenik — Split</a>
+      <a class="chipx reveal" style="--i:8" href="/kombi-prijevoz-sibenik/#relacije">Kombi prijevoz Šibenik — Zagreb</a>
+      <a class="chipx reveal" style="--i:9" href="/selidbe-sibenik/#kat">Selidba na kat bez lifta</a>
     </div>
   </div>
 </section>
@@ -375,7 +411,7 @@ details.q .a a{color:var(--blue)}
       </details>
       <details class="q reveal" style="--i:2">
         <summary>Odvozite li stari namještaj i građevinski otpad?</summary>
-        <div class="a">Da. Odvozimo stari namještaj, glomazni otpad te građevinski otpad i šutu. Recite otprilike koliko toga ima i s kojeg kata se iznosi.</div>
+        <div class="a">Da. Odvozimo <a href="/odvoz-starog-namjestaja-sibenik/">stari namještaj i glomazni otpad</a> te <a href="/odvoz-sute-sibenik/">građevinski otpad i šutu</a>. Recite otprilike koliko toga ima i s kojeg kata se iznosi.</div>
       </details>
       <details class="q reveal" style="--i:3">
         <summary>Radite li selidbe na kat i bez lifta?</summary>
@@ -426,7 +462,7 @@ details.q .a a{color:var(--blue)}
           </div>
           <div class="field"><label for="opis">Kratak opis</label><textarea id="opis" enterkeyhint="done" placeholder="Npr. dvosoban stan, dva kauča, ormar, perilica, oko 20 kutija"></textarea></div>
           <button class="btn" type="submit" style="justify-self:start">Pošalji upit</button>
-          <div class="sent" id="sent">Hvala na upitu. Ovo je primjer stranice pa se poruka ne šalje — na pravoj stranici stigla bi vam odmah na mail i mobitel.</div>
+          <div class="sent" id="sent">Hvala. Otvara se WhatsApp s vašim upitom — samo pritisnite Pošalji.</div>
           <p class="formnote">Fotografije prostora ubrzaju procjenu. Možete ih poslati i na WhatsApp.</p>
         </form>
       </div>
@@ -436,8 +472,8 @@ details.q .a a{color:var(--blue)}
           <a class="cl" href="tel:+385912546296"><b>Telefon</b>091 254 6296</a>
           <a class="cl" href="https://wa.me/385912546296" target="_blank" rel="noopener"><b>WhatsApp</b>091 254 6296 — pošaljite fotografije</a>
           <a class="cl" href="mailto:ivica.strize@gmail.com"><b>E-mail</b>ivica.strize@gmail.com</a>
-          <a class="cl" href="#kontakt"><b>Adresa</b>Put prvog šibenskog partizanskog odreda 3, 22000 Šibenik</a>
-          <a class="cl" href="#kontakt"><b>Radno vrijeme</b>Pon — sub 07:00 — 20:00</a>
+          <a class="cl" href="https://g.page/r/CZPaiW3PAw5zEBM" target="_blank" rel="noopener"><b>Adresa</b>Put prvog šibenskog partizanskog odreda 3, 22000 Šibenik</a>
+          <div class="cl"><b>Radno vrijeme</b>Pon — sub 07:00 — 20:00</div>
           <p class="formnote" style="margin-top:14px">Za brzu procjenu najbolje je poslati fotografije na WhatsApp.</p>
         </div>
       </div>
@@ -449,11 +485,12 @@ details.q .a a{color:var(--blue)}
 
 <footer>
   <div class="wrap foot">
-    <div><h4>Kombi prijevoz i selidbe Šibenik</h4><address style="font-style:normal;margin:0;color:var(--muted);font-size:14px">Obrt za prijevoz VITA-S<br>Put prvog šibenskog partizanskog odreda 3, 22000 Šibenik<br>Selidbe, dostave, odvoz otpada</address></div>
-    <div><h4>Kontakt</h4><p><a href="tel:+385912546296" style="color:var(--blue);text-decoration:none">091 254 6296</a><br><a href="mailto:ivica.strize@gmail.com" style="color:var(--blue);text-decoration:none">ivica.strize@gmail.com</a></p></div>
+    <div><h4>Kombi prijevoz i selidbe Šibenik</h4><address style="font-style:normal;margin:0;color:var(--muted);font-size:14px">Obrt za prijevoz VITA-S<br>Put prvog šibenskog partizanskog odreda 3, 22000 Šibenik<br><a href="https://g.page/r/CZPaiW3PAw5zEBM" target="_blank" rel="noopener" style="color:var(--blue);text-decoration:none;display:inline-block;padding:4px 0">Google profil i karta</a></address></div>
+    <div><h4>Usluge</h4><ul><li><a href="/selidbe-sibenik/">Selidbe Šibenik</a></li><li><a href="/kombi-prijevoz-sibenik/">Kombi prijevoz Šibenik</a></li><li><a href="/odvoz-starog-namjestaja-sibenik/">Odvoz starog namještaja</a></li><li><a href="/odvoz-sute-sibenik/">Odvoz šute i građevinskog otpada</a></li></ul></div>
+    <div><h4>Kontakt</h4><p><a href="tel:+385912546296" style="color:var(--blue);text-decoration:none;display:inline-block;padding:4px 0">091 254 6296</a><br><a href="mailto:ivica.strize@gmail.com" style="color:var(--blue);text-decoration:none;display:inline-block;padding:4px 0">ivica.strize@gmail.com</a></p></div>
     <div><h4>Radno vrijeme</h4><p>Ponedjeljak — subota<br>07:00 — 20:00</p></div>
   </div>
-  <div class="wrap"><p class="credit">Izrada: <a class="madeby" href="https://www.azzurrodigital.hr" target="_blank" rel="noopener" aria-label="Azzurro Digital — otvara se u novom prozoru"><img src="azzurro-digital.png" alt="Azzurro Digital" width="640" height="169" loading="lazy" decoding="async"></a></p></div>
+  <div class="wrap"><p class="credit">Izrada: <a class="madeby" href="https://www.azzurrodigital.hr" target="_blank" rel="noopener" aria-label="Azzurro Digital — otvara se u novom prozoru"><img src="/azzurro-digital.png" alt="Azzurro Digital" width="640" height="169" loading="lazy" decoding="async"></a></p></div>
 </footer>
 
 <div class="mobilebar">
@@ -468,7 +505,7 @@ details.q .a a{color:var(--blue)}
     els.forEach(function(e){e.classList.add('in')});return;
   }
   var io=new IntersectionObserver(function(en){
-    en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+    en.forEach(function(e){if(e.isIntersecting||e.boundingClientRect.top<0){e.target.classList.add('in');io.unobserve(e.target);}});
   },{rootMargin:'0px 0px -6% 0px',threshold:.1});
   els.forEach(function(e){io.observe(e)});
 })();

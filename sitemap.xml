@@ -2,8 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://prijevoz-sibenik.com/</loc>
-    <lastmod>2026-09-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-09-30</lastmod>
+  </url>
+  <url>
+    <loc>https://prijevoz-sibenik.com/selidbe-sibenik/</loc>
+    <lastmod>2026-09-30</lastmod>
+  </url>
+  <url>
+    <loc>https://prijevoz-sibenik.com/kombi-prijevoz-sibenik/</loc>
+    <lastmod>2026-09-30</lastmod>
+  </url>
+  <url>
+    <loc>https://prijevoz-sibenik.com/odvoz-starog-namjestaja-sibenik/</loc>
+    <lastmod>2026-09-30</lastmod>
+  </url>
+  <url>
+    <loc>https://prijevoz-sibenik.com/odvoz-sute-sibenik/</loc>
+    <lastmod>2026-09-30</lastmod>
   </url>
 </urlset>
